@@ -1,0 +1,648 @@
+
+
+/*=============================
+LINKING FONT FAMILY
+=============================*/
+
+@font-face {
+    font-family: 'fontsemibold';
+    src: url('../fonts/HindSiliguri-SemiBold.woff2') format('woff2'),
+        url('../fonts/HindSiliguri-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fontbold';
+    src: url('../fonts/HindSiliguri-Bold.woff2') format('woff2'),
+        url('../fonts/HindSiliguri-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fontmedium';
+    src: url('../fonts/HindSiliguri-Medium.woff2') format('woff2'),
+        url('../fonts/HindSiliguri-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fontregular';
+    src: url('../fonts/HindSiliguri-Regular.woff2') format('woff2'),
+        url('../fonts/HindSiliguri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fontlight';
+    src: url('../fonts/HindSiliguri-Light.woff2') format('woff2'),
+        url('../fonts/HindSiliguri-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+/*===========================
+RESET CSS
+===========================*/
+
+body {
+    font-family: 'fontregular';
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-family: 'fontbold';
+    margin: 0;
+}
+
+h1 {
+    font-size: 35px;
+    margin: 0 0 15px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+ul,
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #404042;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+p {
+    margin: 0;
+    font-family: 'fontlight';
+}
+
+img {
+    max-width: 100%;
+}
+
+.thumbnail-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.thumbnail-img img {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+}
+
+.site-btn {
+    background: #6d9a31;
+    border-radius: 0px;
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 16px;
+}
+
+.site-btn:hover,
+.site-btn:focus {
+    outline: 0;
+    color: #fff;
+    box-shadow: none;
+    background: #72a033;
+}
+
+iframe {
+    display: block;
+}
+
+/*===========================
+TOP HEADER CSS
+===========================*/
+
+.topheader {
+    background: #404041;
+}
+
+.topheader-left {
+    margin: 9px 0 0;
+}
+
+.topheader-left ul li {
+    color: #d4c0cd;
+    font-size: 15px;
+    font-family: 'fontlight';
+}
+
+.topheader-left ul li i {
+    margin-right: 7px;
+}
+
+.topheader-left ul li a {
+    color: #8bc43f;
+    font-family: 'fontbold';
+}
+
+.social-icons ul {
+    float: right;
+}
+
+.social-icons ul li:first-of-type {
+    border-left: 1px solid #6a6a6f;
+}
+
+.social-icons ul li {
+    display: inline-block;
+    vertical-align: middle;
+    border-right: 1px solid #6a6a6f;
+}
+
+.social-icons ul li a {
+    display: block;
+    color: #d4c0cd;
+    padding: 7px 15px;
+}
+
+.social-icons ul li a:hover {
+    color: #fff;
+}
+
+
+/*===========================
+SITE HEADER CSS
+===========================*/
+
+.site-header {
+    padding: 20px 0;
+}
+
+.site-logo > a {
+    display: block;
+}
+
+.site-logo > a img {
+    max-width: 120px;
+}
+
+.site-navigation {
+    margin: 25px 0 0;
+    float: right;
+}
+
+.site-navigation ul {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.site-navigation ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 25px;
+}
+
+.site-navigation ul li a {
+    display: block;
+    font-family: 'fontmedium';
+    font-size: 17px;
+}
+
+.site-navigation .bookbtn {
+    display: inline-block;
+    vertical-align: middle;
+    background: #8bc43f;
+    color: #fff;
+    padding: 10px 17px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+}
+
+.site-navigation .bookbtn:hover {
+    background: #72a033;
+}
+
+.site-navigation ul li a:hover,
+.site-navigation ul li.current-menu-item a {
+    color: #8bc43f;
+}
+
+
+/*===========================
+HOME SLIDER CSS
+===========================*/
+
+.slider-contentWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.slider-contentWrapper .slider-content {
+    width: 50%;
+    color: #fff;
+}
+
+.slider-contentWrapper .slider-content p {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 30px;
+    font-family: 'fontlight';
+}
+
+.slider-contentWrapper .slider-content .site-btn {
+    font-size: 18px;
+    padding: 8px 20px;
+}
+
+
+/*===========================
+HOME SECTION CSS
+===========================*/
+
+.homecontent.details {
+    padding: 60px 0 0;
+}
+
+.homecontent.details .content {
+    text-align: center;
+    padding: 0 80px;
+}
+
+.homecontent.details .content h2 {
+    margin: 0 0 10px;
+    color: #6d7168;
+}
+
+.homecontent.details .content p {
+    margin: 0 0 10px;
+}
+
+.homecontent.threeblock {
+    padding: 60px 0;
+}
+
+.threeblock {
+    position: relative;
+}
+
+.threeblock .row {
+    margin: 0;
+}
+
+.threeblock [class*=col-] {
+    padding: 0;
+}
+
+.threeblock .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.threeblock .text span {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 30px;
+    color: #bdb7b7;
+    font-family: 'fontlight';
+}
+
+.threeblock.one .text {
+    background: rgba(19,147,113,0.85);
+}
+
+.threeblock.two .text {
+    background: rgba(134,32,29,0.85);
+}
+
+.threeblock.three .text {
+    background:rgba(10,95,167,0.85);
+}
+
+
+
+/*==================================
+SECTION HOME SERVICES CSS
+==================================*/
+
+.home-services {
+    padding: 60px 0;
+    background: #eee;
+}
+
+.section-heading {
+    margin: 0 0 40px;
+}
+
+.section-heading h2 {
+    color: #6d7168;
+}
+
+.services-block h4 {
+    font-family: 'fontmedium';
+    font-size: 17px;
+}
+
+
+/*==================================
+HOME ALWAYS SECTION CSS
+==================================*/
+
+.home-always .alwaysleft {
+    float: left;
+    width: 50%;
+    background: #6c6c6e;
+    padding: 40px 60px;
+}
+
+.home-always .alwaysleft h2 {
+    color: #fff;
+    margin: 0 0 35px;
+    position: relative;
+}
+
+.home-always .alwaysleft h2::before {
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    content: "";
+    height: 3px;
+    width: 60px;
+    background: #fff;
+}
+
+.home-always .alwaysleft p {
+    font-size: 15px;
+    color: #fff;
+}
+
+.alwaysleft .list {
+    margin-top: 30px;
+}
+
+.alwaysleft .list ul li {
+    color: #e8e4e4;
+    margin: 0 0 7px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.alwaysleft .list ul li::before {
+    position: absolute;
+    content: "\f105";
+    left: 0;
+    top: -1px;
+    font-family: 'FontAwesome';
+    color: #ece0e0;
+}
+
+/*==================================
+SECTION HOME CARES CSS
+==================================*/
+
+.homecares {
+    background: #edf1f4;
+    padding: 60px 0;
+}
+
+.caresblock {
+    position: relative;
+    padding: 32px 25px 32px 110px;
+    margin: 0 0 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.10);
+    -webkit-box-shadow: 0px 0px 25px rgba(0,0,0,0.10);
+    -moz-box-shadow: 0px 0px 25px rgba(0,0,0,0.10);
+    min-height: 112px;
+}
+
+.caresblock::before {
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0px;
+    width: 3px;
+    height: 100%;
+    background-color: #8bc43f;
+    transition: all 900ms ease;
+    -moz-transition: all 900ms ease;
+    -webkit-transition: all 900ms ease;
+    -ms-transition: all 900ms ease;
+    -o-transition: all 900ms ease;
+}
+
+.caresblock img {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.caresblock p {
+    font-size: 15px;
+}
+
+
+/*==================================
+SITE FOOTER CSS
+==================================*/
+
+.site-footer {
+    background: #432538;
+    padding: 60px 0;
+}
+
+.footer-block h4 {
+    color: #e0dcdc;
+    font-size: 20px;
+    position: relative;
+    padding: 0 0 10px;
+    margin: 0 0 20px;
+}
+
+.footer-block h4::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 50px;
+    background: #8bc43f;
+}
+
+.footer-block ul li {
+    margin: 0 0 5px;
+}
+
+.footer-block ul li a {
+    display: block;
+    color: #a8a8a8;
+    position: relative;
+    padding-left: 15px;
+}
+
+.footer-block ul li a::before {
+    position: absolute;
+    content: "\f105";
+    left: 0;
+    top: -1px;
+    font-family: 'FontAwesome';
+    color: #a8a8a8;
+}
+
+.footer-block ul li a:hover {
+    color: #fff;
+}
+
+.footer-block p {
+    color: #a8a8a8;
+}
+
+.footer-block p.number {
+    font-size: 25px;
+    color: #eaacac;
+    margin: 0 0 12px;
+}
+
+.footer-block p.number i {
+    margin-right: 10px;
+}
+
+.padr30 {
+    padding-right: 30px;
+}
+
+.site-footer .social-icons {
+    margin: 20px 0 0;
+}
+
+.social-icons dl dt {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+}
+
+.social-icons dl dt a {
+    display: block;
+    color: #a59393;
+    font-size: 20px;
+}
+
+.social-icons dl dt a:hover {
+    color: #fff;
+}
+
+.copyright {
+    margin: 30px 0 0;
+    border-top: 1px solid #613a52;
+    padding-top: 20px;
+}
+
+.copyright p {
+    color: #a8a8a8;
+    font-size: 15px;
+}
+
+.copyright p a {
+    color: #8bc43f;
+    text-decoration: underline;
+}
+
+
+/*==================================
+LOGIN PAGE CSS
+==================================*/
+
+.login {
+    background: #efe9e9;
+}
+
+.loginFormwrapper {
+    background: #fff;
+    border-radius: 5px;
+    padding: 70px 30px 30px;
+    max-width: 450px;
+    position: relative;
+    margin: 150px auto 0;
+    box-shadow: 3px 2px 3px #ddd;
+    -webkit-box-shadow: 3px 2px 3px #ddd;
+    -moz-box-shadow: 3px 2px 3px #ddd;
+}
+
+.loginFormwrapper h3 {
+    font-family: 'fontmedium';
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.loginFormwrapper form .form-control {
+    font-family: 'fontlight';
+    height: 40px;
+    font-size: 15px;
+    padding: 15px 15px;
+}
+
+.loginFormwrapper form .form-control:focus {
+    box-shadow: none;
+}
+
+.smalltxt {
+    font-size: 14px;
+}
+
+.smalltxt span {
+    margin-left: 5px;
+    position: relative;
+    top: -2px;
+}
+
+.submit-btn {
+    background: #948abb;
+    color: #fff;
+    width: 100%;
+    font-size: 17px;
+}
+
+.submit-btn {
+    padding: 8px 0;
+}
+
+.loginFormwrapper .thumbnail-img {
+    height: 120px;
+    width: 120px;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    background: #fff;
+    border-radius: 100%;
+    position: absolute;
+    padding: 10px;
+}
